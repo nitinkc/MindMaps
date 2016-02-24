@@ -102,11 +102,6 @@
           "title": "An object that is instantiated, assembled and managed by a Spring IOC Container",
           "id": 53
         },
-        "2": {
-          "title": "How to create",
-          "id": 54,
-          "ideas": {}
-        },
         "3": {
           "title": "How to Add a bean",
           "id": 56,
@@ -135,11 +130,8 @@
             },
             "2": {
               "title": "prototype(any number of object instances)",
-              "id": 61
-            },
-            "3": {
-              "title": "request (HTTP Request). Only valid in context web-aware Spring Application Context",
-              "id": 62
+              "id": 61,
+              "ideas": {}
             },
             "4": {
               "title": "session (HTTP Session)",
@@ -154,6 +146,19 @@
                   156,
                   1
                 ],
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "used in the portlet",
+                  "id": 227
+                }
+              }
+            },
+            "4.5": {
+              "title": "request (HTTP Request). Only valid in context web-aware Spring Application Context",
+              "id": 62,
+              "attr": {
                 "style": {}
               }
             }
@@ -277,6 +282,36 @@
               "contentType": "text/html",
               "content": "<span style=\"color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; text-align: justify;\">The Spring container is able to autowire relationships between collaborating beans. This means that it is possible to automatically let Spring resolve collaborators (other beans) for your bean by inspecting the contents of the BeanFactory without using &lt;constructor-arg&gt; and &lt;property&gt; elements.</span>"
             },
+            "style": {}
+          }
+        },
+        "4.5": {
+          "title": "How to create",
+          "id": 54,
+          "ideas": {
+            "1": {
+              "title": "3 ways",
+              "id": 223,
+              "ideas": {
+                "1": {
+                  "title": "2.xaml",
+                  "id": 224
+                },
+                "3": {
+                  "title": "post constict3.",
+                  "id": 226
+                },
+                "0.5": {
+                  "title": "3. init method",
+                  "id": 225,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
             "style": {}
           }
         }
@@ -695,7 +730,15 @@
       "ideas": {
         "1": {
           "title": "XML Based Configuration",
-          "id": 126
+          "id": 126,
+          "attr": {
+            "position": [
+              170.03737060915023,
+              -327.1586323813224,
+              1
+            ],
+            "style": {}
+          }
         },
         "2": {
           "title": "Annotation-based configuration",
@@ -731,7 +774,12 @@
                       "title": "the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.",
                       "id": 110,
                       "attr": {
-                        "style": {}
+                        "style": {},
+                        "position": [
+                          203.04084198366206,
+                          -59.15515337741613,
+                          1
+                        ]
                       }
                     }
                   }
