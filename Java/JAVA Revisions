@@ -5,7 +5,15 @@
   "ideas": {
     "1": {
       "title": "Serialization",
-      "id": 2
+      "id": 2,
+      "attr": {
+        "position": [
+          282.56574118196806,
+          -435.9965286254883,
+          10
+        ],
+        "style": {}
+      }
     },
     "11": {
       "title": "Concurrency Control",
@@ -15,10 +23,6 @@
           "title": "Multithreading",
           "id": 4,
           "attr": {
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<a href=\"https://torrentz.eu/search?q=packet+tracer\">https://torrentz.eu/search?q=packet+tracer</a><div><br></div><div>sddssdfdsfsd</div>"
-            },
             "style": {}
           },
           "ideas": {}
@@ -30,9 +34,9 @@
       },
       "attr": {
         "position": [
-          227.5,
-          -179,
-          6
+          226.57617819368681,
+          -301.5486050594,
+          9
         ],
         "style": {}
       }
@@ -99,12 +103,12 @@
         }
       },
       "attr": {
+        "style": {},
         "position": [
-          276.5,
-          -3,
-          5
-        ],
-        "style": {}
+          248.57269918978056,
+          -62.555547808423455,
+          7
+        ]
       }
     },
     "13": {
@@ -128,9 +132,9 @@
           "id": 24,
           "attr": {
             "position": [
-              322.0035400390625,
-              141.46883112707303,
-              7
+              236,
+              124,
+              4
             ],
             "style": {}
           }
@@ -152,9 +156,9 @@
           "id": 21,
           "attr": {
             "position": [
-              189.0001220703125,
-              -47.76732486560002,
-              6
+              238.5,
+              -1,
+              1
             ],
             "style": {}
           }
@@ -174,9 +178,9 @@
       },
       "attr": {
         "position": [
-          273.5,
-          146,
-          4
+          296.57611715853056,
+          138.44796171306098,
+          8
         ],
         "style": {}
       }
@@ -278,6 +282,32 @@
     "-14": {
       "title": "Generics",
       "id": 32
+    },
+    "-15": {
+      "title": "Cloning : creating an EXACT copy of an object",
+      "id": 55,
+      "ideas": {
+        "1": {
+          "title": "Deep Cloning",
+          "id": 56,
+          "ideas": {
+            "1": {
+              "title": "MAked clone of all the Associated objects",
+              "id": 59
+            }
+          }
+        },
+        "2": {
+          "title": "Shallow : Default (clone()) ",
+          "id": 57,
+          "ideas": {
+            "1": {
+              "title": "Shares common object ",
+              "id": 58
+            }
+          }
+        }
+      }
     }
   },
   "attr": {
