@@ -12,6 +12,88 @@
   },
   "ideas": {
     "1": {
+      "title": "Executors: Framework for Asynchronous execution",
+      "id": 5,
+      "ideas": {
+        "1": {
+          "title": "Actions: Runnables",
+          "id": 12
+        },
+        "2": {
+          "title": "Functions: Callables",
+          "id": 13
+        }
+      }
+    },
+    "2": {
+      "title": "Thread Pools",
+      "id": 6
+    },
+    "12": {
+      "title": "Futures",
+      "id": 7
+    },
+    "22": {
+      "title": "Concurrent Collections",
+      "id": 8,
+      "ideas": {
+        "1": {
+          "title": "ConcurrentMAps",
+          "id": 19,
+          "ideas": {}
+        },
+        "2": {
+          "title": "Concurrent dequeue",
+          "id": 21
+        },
+        "3": {
+          "title": "copyonwritearrayList\n\n",
+          "id": 22
+        },
+        "4": {
+          "title": "Concurrent hashmap",
+          "id": 23
+        }
+      }
+    },
+    "32": {
+      "title": "Locks and Conditionjs",
+      "id": 9
+    },
+    "42": {
+      "title": "Synchronizers",
+      "id": 10,
+      "attr": {
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Semaphores",
+          "id": 14
+        },
+        "2": {
+          "title": "Cyclic Barriers",
+          "id": 15
+        },
+        "3": {
+          "title": "Countdown Latches",
+          "id": 16
+        },
+        "4": {
+          "title": "Exchangers",
+          "id": 17
+        },
+        "5": {
+          "title": "Phasers",
+          "id": 18
+        }
+      }
+    },
+    "52": {
+      "title": "Atomic variables",
+      "id": 11
+    },
+    "-10": {
       "title": "java.util.concurrent Package: to replace error prone or inefficient code JSR 166: Concurrency Utilities",
       "id": 2,
       "ideas": {
@@ -19,22 +101,13 @@
           "title": "Why?? built in concurrency too primitive, can lead to poor performance. too much wheel inventing",
           "id": 3,
           "attr": {
-            "storyboard-scenes": [
-              {
-                "storyboards": {
-                  "Storyboard 1": 1
-                }
-              },
-              {
-                "storyboards": {
-                  "Storyboard 1": 2
-                },
-                "type": "with-children"
-              }
-            ],
             "style": {}
-          }
+          },
+          "ideas": {}
         }
+      },
+      "attr": {
+        "style": {}
       }
     }
   }
