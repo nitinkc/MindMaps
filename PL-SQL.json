@@ -41,7 +41,7 @@
               "id": 18,
               "ideas": {
                 "1": {
-                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin                        },
+                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin"                        },
                         "style": {}
                       }
                     },
@@ -51,7 +51,7 @@
                       "attr": {
                         "attachment": {
                           "contentType": "text/html",
-                          "content": "<div>V_employee &nbsp; &nbsp;employee%ROWTYPE; -- Iv
+                          "content": "<div>V_employee &nbsp; &nbsp;employee%ROWTYPE; -- Iv"
             },
             "style": {}
           }
