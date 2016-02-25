@@ -6,5 +6,11 @@
     "style": {
       "background": "#ffff00"
     }
+  },
+  "ideas": {
+    "1": {
+      "title": "Maps",
+      "id": 2
+    }
   }
 }
