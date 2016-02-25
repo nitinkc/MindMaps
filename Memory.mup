@@ -1,0 +1,16 @@
+{
+  "title": "Memory",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Instance var. only in Heap",
+      "id": 2
+    }
+  },
+  "attr": {
+    "style": {
+      "background": "#00ff00"
+    }
+  }
+}
