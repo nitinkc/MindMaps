@@ -9,7 +9,7 @@
 },
 "ideas": {
   "1": {
-    "title": "Stored Function: can be called from othern fubction or procedire",
+    "title": "Stored Function: can be called from other function or procedure",
     "id": 2
   },
   "11": {
@@ -31,8 +31,8 @@
         "title": "stored Function",
         "id": 12,
         "ideas": {}
+        }
       }
-    }
     }
   }
 }
