@@ -1,5 +1,16 @@
 {
-  "title": "This map was removed by its author",
+  "title": "PLSQL",
   "formatVersion": 2,
-  "id": 1
+  "id": 1,
+  "attr": {
+    "style": {
+      "background": "#ffff00"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "Test",
+      "id": 2
+    }
+  }
 }
