@@ -31,8 +31,36 @@
         "title": "stored Function",
         "id": 12,
         "ideas": {}
+        },
+        "2": {
+          "title": "Stored Procedures",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "Once a SP is created -->  invoked from trigger, procedure or function",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin"
+                        },
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "Declaring Variables with the %ROWTYPE Attribute",
+                      "id": 31,
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<div>V_employee &nbsp; &nbsp;employee%ROWTYPE; -- Iv"
+            },
+            "style": {}
+          }
         }
       }
+    }    
+      }
     }
+
   }
 }
