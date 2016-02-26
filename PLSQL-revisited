@@ -10,7 +10,12 @@
   "ideas": {
     "1": {
       "title": "Test",
-      "id": 2
+      "id": 2,
+      "ideas": {}
+    },
+    "11": {
+      "title": "Test2",
+      "id": 5
     }
   }
 }
