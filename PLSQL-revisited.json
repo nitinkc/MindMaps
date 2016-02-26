@@ -1,36 +1,36 @@
 {
-"title": "PL/SQL",
-"id": 1,
-"formatVersion": 2,
-"attr": {
-  "style": {
-    "background": "#00ff00"
-  }
-},
-"ideas": {
-  "1": {
-    "title": "Stored Function: can be called from other function or procedure",
-    "id": 2
-  },
-  "11": {
-    "title": "Trigger",
-    "id": 3,
-    "ideas": {
-      "1": {
-        "title": "events on tables, views or system events",
-        "id": 4,
-        "ideas": {}
-      }
+  "title": "PL/SQL",
+  "id": 1,
+  "formatVersion": 2,
+  "attr": {
+    "style": {
+      "background": "#00ff00"
     }
   },
-  "12": {
-    "title": "Named Blocks",
-    "id": 11,
-    "ideas": {
-      "1": {
-        "title": "stored Function",
-        "id": 12,
-        "ideas": {}
+  "ideas": {
+    "1": {
+      "title": "Stored Function: can be called from othern fubction or procedire",
+      "id": 2
+    },
+    "11": {
+      "title": "Trigger",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "events on tables, views or system events",
+          "id": 4,
+          "ideas": {}
+        }
+      }
+    },
+    "12": {
+      "title": "Named Blocks",
+      "id": 11,
+      "ideas": {
+        "1": {
+          "title": "stored Function",
+          "id": 12,
+          "ideas": {}
         },
         "2": {
           "title": "Stored Procedures",
@@ -41,8 +41,7 @@
               "id": 18,
               "ideas": {
                 "1": {
-                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin"
-                        },
+                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin"                        },
                         "style": {}
                       }
                     },
@@ -55,37 +54,164 @@
                           "content": "<div>V_employee &nbsp; &nbsp;employee%ROWTYPE; -- Iv"
             },
             "style": {}
-                }
-              }
-            }
-          },
-          "13": {
-            "title": "EXCEPTION",
-            "id": 21,
-            "ideas": {
-              "1": {
-                "title": "WHEN NO_DATA_FOUND THEN",
-                "id": 22,
-                "ideas": {}
-              },
-              "2": {
-                "title": "WHEN TOO_MANY_ROWS \nTHEN",
-                "id": 24
-              },
-              "3": {
-                "title": "sqlcode , sqlerrm",
-                "id": 37,
-                "attr": {
-                  "attachment": {
-                    "contentType": "text/html",
-                    "content": "<span id=\"docs-internal-guid-7d8ff819-1128-75ad-a478-de3dc9024351\"><ul style=\"margin-top:0pt;margin-bottom:0pt;\"><li dir=\"ltr\" style=\"list-style-type: disc; font-family: 'Noto Sans Symbols'; color: rgb(11, 208, 217); vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height: 1.08; margin-top: 5.2pt; margin-bottom: 0pt;\"><font size=\"3\"><b><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">When others then </span><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">insert into sp_log(sqlcode, sqlerrm) </span></b></font></p></li></ul></span>"
-                  },
-                  "style": {}
-                }
-              }
-            }
           }
         }
       }
+    },
+    "13": {
+      "title": "EXCEPTION",
+      "id": 21,
+      "ideas": {
+        "1": {
+          "title": "WHEN NO_DATA_FOUND THEN",
+          "id": 22,
+          "ideas": {}
+        },
+        "2": {
+          "title": "WHEN TOO_MANY_ROWS \nTHEN",
+          "id": 24
+        },
+        "3": {
+          "title": "sqlcode , sqlerrm",
+          "id": 37,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<span id=\"docs-internal-guid-7d8ff819-1128-75ad-a478-de3dc9024351\"><ul style=\"margin-top:0pt;margin-bottom:0pt;\"><li dir=\"ltr\" style=\"list-style-type: disc; font-family: 'Noto Sans Symbols'; color: rgb(11, 208, 217); vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height: 1.08; margin-top: 5.2pt; margin-bottom: 0pt;\"><font size=\"3\"><b><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">When others then </span><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">insert into sp_log(sqlcode, sqlerrm) </span></b></font></p></li></ul></span>"
+            },
+            "style": {}
+          }
+        }
+      }
+    },
+    "14": {
+      "title": "Cursors : go over a result of a query",
+      "id": 38,
+      "ideas": {
+        "1": {
+          "title": "SELECT INTO works well when we get exactly one row from query",
+          "id": 39
+        },
+        "2": {
+          "title": "CUSROR ATTRIBUTES",
+          "id": 40,
+          "ideas": {
+            "1": {
+              "title": "Different Cursor Attributes",
+              "id": 43,
+              "attr": {
+                "icon": {
+                  "url": "internal:1/4a043c4c-b13f-9aef-a2d4-6c942e8b1664/",
+                  "width": 446,
+                  "height": 338,
+                  "position": "bottom"
+                },
+                "style": {},
+                "position": [
+                  318.5487202950467,
+                  -185.65626008422305,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>CREATE OR REPLACE PROCEDURE P_calc_AREA</div><div>IS</div><div>&nbsp; Pi constant NUMBER(8,7) := 3.1415926;</div><div>&nbsp; area NUMBER(14,2);</div><div>&nbsp; cursor rad_cursor IS select * from RAD_VALS;</div><div>&nbsp; rad_value &nbsp;rad_cursor%ROWTYPE;</div><div><br></div><div>BEGIN</div><div>&nbsp; open rad_cursor;</div><div>&nbsp; fetch rad_cursor into rad_value;</div><div>&nbsp; area:=pi*power(rad_value.radius,2);</div><div>&nbsp; insert into AREAS values (rad_value.radius, area);</div><div>&nbsp; close rad_cursor;</div><div>END;</div><div>/</div>"
+            },
+            "style": {},
+            "position": [
+              238.32650119287018,
+              -71.55204300232867,
+              6
+            ]
+          }
+        },
+        "3": {
+          "title": "parameterized Cursor",
+          "id": 44,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<div>DECLARE</div><div>&nbsp;CURSOR cursorValue(p_product_id NUMBER) IS SELECT h.product_desc, o.company_short_name</div><div>&nbsp;FROM company o,product h</div><div>&nbsp;WHERE o.product_id =h.product_id</div><div>&nbsp;AND h.product_id =p_product_id ORDER by 2;</div><div>&nbsp;--v_company_rec cursorValue%ROWTYPE;</div><div>BEGIN</div><div>--OPEN cursorValue(1) ;</div><div>&nbsp;FOR idx in cursorValue(1) LOOP</div><div>&nbsp;dbms_output.put_line</div><div>(rpad(idx.product_desc,20,' ')||' '|| rpad(idx.company_short_name,30,' '));</div><div>&nbsp;END LOOP;</div><div>&nbsp;FOR idx in cursorValue(2) LOOP</div><div>&nbsp;dbms_output.put_line(rpad(idx.product_des,20,' ')||' '||</div><div>&nbsp;rpad(idx.company_short_name,30,' '));</div><div>&nbsp;END LOOP;</div><div>CLOSE cursor</div><div>END ;</div>"
+            },
+            "style": {},
+            "position": [
+              251.32991916162018,
+              15.444477993765076,
+              5
+            ]
+          }
+        },
+        "4": {
+          "title": "For update",
+          "id": 45,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<span id=\"docs-internal-guid-346f0a48-115f-ed03-b623-26ea310370c6\"><p dir=\"ltr\" style=\"line-height:1.08;margin-top:0pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">DECLARE </font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">CURSOR wip_cur IS SELECT acct_no, enter_date FROM wip</font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><font size=\"3\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"> &nbsp;WHERE enter_date &lt; SYSDATE -7 </span><span style=\"font-family: Verdana; color: rgb(0, 32, 96); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">FOR UPDATE</span><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">; </span></font></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">BEGIN </font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">FOR wip_rec IN wip_cur LOOP</font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\"> INSERT INTO acct_log (acct_no, order_date) VALUES (wip_rec.acct_no, wip_rec.enter_ date); </font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><font size=\"3\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">DELETE FROM wip </span><span style=\"font-family: Verdana; color: rgb(0, 32, 96); font-weight: 700; vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">WHERE CURRENT OF </span><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">wip_cur;</span></font></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\"> END LOOP; </font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">COMMIT; -- releasing the lock</font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">ROLLBACK;-- releasing the lock</font></span></p><p dir=\"ltr\" style=\"line-height:1.08;margin-top:4.8pt;margin-bottom:0pt;margin-left: 21.6pt;text-indent: -21.6pt;\"><span style=\"font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><font size=\"3\">END; </font></span></p><div><span style=\"font-size: 32px; font-family: Verdana; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\"><br></span></div></span>"
+            },
+            "style": {},
+            "position": [
+              204.33339816552643,
+              79.45491500548383,
+              3
+            ]
+          }
+        }
+      },
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<div>DECLARE</div><div>&nbsp; &nbsp; &nbsp; cursor cur_sailors is select * from sailors;</div><div>&nbsp; &nbsp; &nbsp; sailorData &nbsp; cur_sailors%ROWTYPE;</div><div>--Or</div><div>&nbsp; &nbsp; &nbsp; -- sailorData &nbsp; &nbsp; sailors%ROWTYPE;</div><div>&nbsp;&nbsp;</div><div>&nbsp;BEGIN</div><div>open cur_sailors; -- Memory is allocated to hold one row</div><div>LOOP</div><div>fetch cur_sailors into &nbsp;sailorData;</div><div>&nbsp;--Exactly one row is fetched by fetch statement</div><div><br></div><div>--Cursor Attribute (insert only first 5 characters into &nbsp;)</div><div>insert into temp_sailers values (substr (sailorData.name, 1,5))</div><div><br></div><div>EXIT WHEN cur_sailors%NOTFOUND;</div><div>--process the data&nbsp;</div><div>END LOOP;</div><div>-- in the end CURSORS must be closed</div><div><br></div><div>CLOSE cur_sailors; -- memory deallocation</div>"
+        },
+        "style": {},
+        "position": [
+          77.99658203125,
+          647.0000320010722,
+          1
+        ]
+      }
+    },
+    "123": {
+      "title": "Packages",
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "Organize your procedures and Functions, variables",
+          "id": 8,
+          "attr": {
+            "position": [
+              206.99996948242188,
+              -113.9964828491211,
+              1
+            ],
+            "style": {}
+          }
+        }
+      }
+    },
+    "124": {
+      "title": "Anonyous Block",
+      "id": 9,
+      "ideas": {
+        "1": {
+          "title": "To test Stored Function or procedure",
+          "id": 10,
+          "attr": {
+            "position": [
+              281.9999694824219,
+              -15.996482849121094,
+              1
+            ],
+            "style": {}
+          }
+        }
+      }
+    }
+
+    }
+    }
   }
 }
