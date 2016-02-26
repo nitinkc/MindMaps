@@ -1,0 +1,91 @@
+{
+"title": "PL/SQL",
+"id": 1,
+"formatVersion": 2,
+"attr": {
+  "style": {
+    "background": "#00ff00"
+  }
+},
+"ideas": {
+  "1": {
+    "title": "Stored Function: can be called from other function or procedure",
+    "id": 2
+  },
+  "11": {
+    "title": "Trigger",
+    "id": 3,
+    "ideas": {
+      "1": {
+        "title": "events on tables, views or system events",
+        "id": 4,
+        "ideas": {}
+      }
+    }
+  },
+  "12": {
+    "title": "Named Blocks",
+    "id": 11,
+    "ideas": {
+      "1": {
+        "title": "stored Function",
+        "id": 12,
+        "ideas": {}
+        },
+        "2": {
+          "title": "Stored Procedures",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "Once a SP is created -->  invoked from trigger, procedure or function",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": " -- displays source code\n\nSelect Text from USER_SOURCE \nwhere NAME = nitin"
+                        },
+                        "style": {}
+                      }
+                    },
+                    "2": {
+                      "title": "Declaring Variables with the %ROWTYPE Attribute",
+                      "id": 31,
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<div>V_employee &nbsp; &nbsp;employee%ROWTYPE; -- Iv"
+            },
+            "style": {}
+                }
+              }
+            }
+          },
+          "13": {
+            "title": "EXCEPTION",
+            "id": 21,
+            "ideas": {
+              "1": {
+                "title": "WHEN NO_DATA_FOUND THEN",
+                "id": 22,
+                "ideas": {}
+              },
+              "2": {
+                "title": "WHEN TOO_MANY_ROWS \nTHEN",
+                "id": 24
+              },
+              "3": {
+                "title": "sqlcode , sqlerrm",
+                "id": 37,
+                "attr": {
+                  "attachment": {
+                    "contentType": "text/html",
+                    "content": "<span id=\"docs-internal-guid-7d8ff819-1128-75ad-a478-de3dc9024351\"><ul style=\"margin-top:0pt;margin-bottom:0pt;\"><li dir=\"ltr\" style=\"list-style-type: disc; font-family: 'Noto Sans Symbols'; color: rgb(11, 208, 217); vertical-align: baseline; background-color: transparent;\"><p dir=\"ltr\" style=\"line-height: 1.08; margin-top: 5.2pt; margin-bottom: 0pt;\"><font size=\"3\"><b><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">When others then </span><span style=\"font-family: Merriweather; color: rgb(0, 0, 0); vertical-align: baseline; white-space: pre-wrap; background-color: transparent;\">insert into sp_log(sqlcode, sqlerrm) </span></b></font></p></li></ul></span>"
+                  },
+                  "style": {}
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
