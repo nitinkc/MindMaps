@@ -109,6 +109,22 @@
       "attr": {
         "style": {}
       }
+    },
+    "-11": {
+      "title": "Volatile Variable",
+      "id": 24,
+      "ideas": {
+        "1": {
+          "title": "Value never be cached",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "All reads and writes go straight to main memory",
+              "id": 27
+            }
+          }
+        }
+      }
     }
   }
 }
