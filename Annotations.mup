@@ -1,0 +1,27 @@
+{
+  "title": "Annotations",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Marker Annotation",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "no attribute",
+          "id": 3,
+          "ideas": {}
+        }
+      }
+    },
+    "-1": {
+      "title": "Single valued Annotation",
+      "id": 7
+    },
+    "-11": {
+      "title": "Multivalued Annotation",
+      "id": 8
+    }
+  },
+  "links": []
+}
