@@ -1,0 +1,104 @@
+{
+  "title": "Spring Transaction: Logical Unit where groups of tasks are combined to one",
+  "id": 1,
+  "formatVersion": 2,
+  "attr": {
+    "style": {
+      "background": "#ffff00"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "Local Transaction : only one transaction resource is involved. eg one Database",
+      "id": 4,
+      "attr": {
+        "position": [
+          166,
+          -168,
+          9
+        ],
+        "style": {}
+      }
+    },
+    "2": {
+      "title": "Global/XA/Distributed Transaction : More than one transnational Resource ",
+      "id": 5,
+      "attr": {
+        "position": [
+          223,
+          -6,
+          8
+        ],
+        "style": {}
+      }
+    },
+    "12": {
+      "title": "Spring Transaction management ",
+      "id": 6,
+      "ideas": {
+        "1": {
+          "title": "Programatic TX",
+          "id": 8
+        },
+        "2": {
+          "title": "Declarative TX",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "Configuration based",
+              "id": 10
+            },
+            "2": {
+              "title": "Annotation based",
+              "id": 11,
+              "attr": {
+                "position": [
+                  67,
+                  42.5,
+                  1
+                ],
+                "style": {}
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "Service layer should be the owner of Transaction ",
+          "id": 13,
+          "attr": {
+            "position": [
+              181,
+              157.25,
+              1
+            ],
+            "style": {}
+          }
+        }
+      },
+      "attr": {
+        "position": [
+          153,
+          167,
+          7
+        ],
+        "style": {}
+      }
+    },
+    "-10": {
+      "title": "ACID PROPERTIES",
+      "id": 3,
+      "attr": {
+        "position": [
+          231,
+          11,
+          1
+        ],
+        "style": {},
+        "attachment": {
+          "contentType": "text/html",
+          "content": "A: Atomicity"
+        }
+      }
+    }
+  }
+}
