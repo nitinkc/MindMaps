@@ -49,7 +49,7 @@
               "id": 10
             },
             "2": {
-              "title": "Annotation based",
+              "title": "Annotation based: @Transaction",
               "id": 11,
               "attr": {
                 "position": [
@@ -57,11 +57,15 @@
                   42.5,
                   1
                 ],
-                "style": {}
+                "style": {},
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "by default if no attribute is given<div><br></div><div>@Transactional</div><div>means</div><div><font face=\"Courier\" size=\"3\">@Transactional(propagation=Propagation.REQUIRED, read-only=false)</font></div><div><font size=\"3\" face=\"Courier\">propagation: required</font></div><div><font size=\"3\" face=\"Courier\">Read-only: false</font></div>"
+                }
               },
               "ideas": {
                 "1": {
-                  "title": "@Transactional : 5 attribute",
+                  "title": "Propagation attribute",
                   "id": 14,
                   "ideas": {
                     "1": {
@@ -102,6 +106,18 @@
                       "id": 28
                     }
                   }
+                },
+                "2": {
+                  "title": "isolation",
+                  "id": 30
+                },
+                "3": {
+                  "title": "noRollbackFor",
+                  "id": 31
+                },
+                "4": {
+                  "title": "timeout",
+                  "id": 32
                 }
               }
             }
@@ -112,8 +128,8 @@
           "id": 13,
           "attr": {
             "position": [
-              181,
-              157.25,
+              183,
+              95,
               1
             ],
             "style": {}
