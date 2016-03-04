@@ -58,6 +58,51 @@
                   1
                 ],
                 "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "@Transactional : 5 attribute",
+                  "id": 14,
+                  "ideas": {
+                    "1": {
+                      "title": "Propagation.REQUIRED",
+                      "id": 16,
+                      "ideas": {
+                        "1": {
+                          "title": "runs within the TX",
+                          "id": 21
+                        }
+                      }
+                    },
+                    "2": {
+                      "title": "Propagation.REQUIRES_NEW",
+                      "id": 18
+                    },
+                    "3": {
+                      "title": "Propagation.NESTED",
+                      "id": 23
+                    },
+                    "4": {
+                      "title": "Propagation.NEVER",
+                      "id": 24
+                    },
+                    "5": {
+                      "title": "Propagation.SUPPORTS",
+                      "id": 26
+                    },
+                    "6": {
+                      "title": "Propagation.NOT_SUPPORTED",
+                      "id": 27,
+                      "attr": {
+                        "style": {}
+                      }
+                    },
+                    "7": {
+                      "title": "Propagation.NESTED",
+                      "id": 28
+                    }
+                  }
+                }
               }
             }
           }
@@ -99,6 +144,10 @@
           "content": "A: Atomicity"
         }
       }
+    },
+    "-11": {
+      "title": "Rolls back for: any runtime/un-checked exceptions",
+      "id": 29
     }
   }
 }
