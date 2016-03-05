@@ -252,7 +252,8 @@
           "ideas": {
             "1": {
               "title": "Strong References",
-              "id": 36
+              "id": 36,
+              "ideas": {}
             },
             "2": {
               "title": "Weak references",
