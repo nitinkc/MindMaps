@@ -30,6 +30,45 @@
         "2": {
           "title": "Concurrent package",
           "id": 5
+        },
+        "3": {
+          "title": "Liveliness Problem",
+          "id": 65,
+          "ideas": {
+            "1": {
+              "title": "Deadlock : ",
+              "id": 66,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "When 2 or more threads are blocked forever.<div><br></div><div>One common strategy to avoid is for all Threads to order their resource requests</div>"
+                },
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "Starvation",
+              "id": 67,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "Occurs when a single thread is perpetually denied access to a shared resource. The thread is still active, but it is unable to complete its work as a result of other threads constantly taking the resource that they are trying to access"
+                },
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "Livelock",
+              "id": 68,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "Conceptually blocked forever. LL is a special case of resource starvation in which 2 or more threads actively try to resolve a deadlock."
+                },
+                "style": {}
+              }
+            }
+          }
         }
       },
       "attr": {
@@ -191,7 +230,17 @@
     },
     "24": {
       "title": "Exception Handling",
-      "id": 28
+      "id": 28,
+      "ideas": {
+        "1": {
+          "title": "Runtime/unchecked exception : not required to be caught",
+          "id": 69
+        },
+        "2": {
+          "title": "Checked exception: Compiler forces the programmer to HAndle it. A checked exception is ant class that extends expeption",
+          "id": 70
+        }
+      }
     },
     "34": {
       "title": "Inner Class",
