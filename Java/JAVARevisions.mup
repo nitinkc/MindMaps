@@ -339,7 +339,31 @@
     },
     "-2": {
       "title": "Java IO",
-      "id": 7
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "Files and Directories: File Class",
+          "id": 75
+        },
+        "2": {
+          "title": "Streams",
+          "id": 76,
+          "ideas": {
+            "1": {
+              "title": "System.in",
+              "id": 77
+            },
+            "2": {
+              "title": "System.out",
+              "id": 78
+            },
+            "3": {
+              "title": "System.err",
+              "id": 79
+            }
+          }
+        }
+      }
     },
     "-12": {
       "title": "Garbage Collections",
