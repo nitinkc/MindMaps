@@ -234,11 +234,34 @@
       "ideas": {
         "1": {
           "title": "Runtime/unchecked exception : not required to be caught",
-          "id": 69
+          "id": 69,
+          "ideas": {
+            "1": {
+              "title": "MOST COMMON EXCEPTIONS",
+              "id": 71,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "ArithmaticException : divide by zero<div>ArrayIndexOutOfBounds : illegal index access</div><div>ClassCastException : cast an object to a subclass which it is not an instance</div><div>IllegalArgumentException : method has been passed an illegal or inappropriate argument</div><div>NullPointerException : null reference where an object is required</div><div>NumberFormatException : when an attempt is made to convert a STRING to numeric type</div><div>IllegalStateException : attempting to run an invalid operation in collection adn Concurrency</div><div>UnsupportedOperationException : --do--<br></div>"
+                },
+                "style": {}
+              }
+            }
+          }
         },
         "2": {
           "title": "Checked exception: Compiler forces the programmer to HAndle it. A checked exception is ant class that extends expeption",
-          "id": 70
+          "id": 70,
+          "ideas": {
+            "1": {
+              "title": "java.io.IOException",
+              "id": 73
+            },
+            "2": {
+              "title": "java.sql.SQLException",
+              "id": 74
+            }
+          }
         }
       }
     },
