@@ -342,24 +342,99 @@
       "id": 7,
       "ideas": {
         "1": {
-          "title": "Files and Directories: File Class",
-          "id": 75
-        },
-        "2": {
           "title": "Streams",
-          "id": 76,
+          "id": 75,
           "ideas": {
             "1": {
-              "title": "System.in",
-              "id": 77
+              "title": "InputStream",
+              "id": 76,
+              "ideas": {
+                "1": {
+                  "title": "FileInputStream",
+                  "id": 77
+                },
+                "2": {
+                  "title": "FilterInputStream",
+                  "id": 78,
+                  "ideas": {
+                    "1": {
+                      "title": "BufferedInputStream",
+                      "id": 79,
+                      "ideas": {}
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ObjectInputStream",
+                  "id": 83
+                }
+              }
             },
             "2": {
-              "title": "System.out",
-              "id": 78
+              "title": "OutputStream",
+              "id": 84,
+              "ideas": {
+                "1": {
+                  "title": "FileOutputStream",
+                  "id": 85
+                },
+                "2": {
+                  "title": "FilterOutputStream",
+                  "id": 86,
+                  "ideas": {
+                    "1": {
+                      "title": "BufferedOutputStream",
+                      "id": 89
+                    },
+                    "2": {
+                      "title": "PrintStream",
+                      "id": 90
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ObjectOutputStream",
+                  "id": 88
+                }
+              }
             },
             "3": {
-              "title": "System.err",
-              "id": 79
+              "title": "Reader",
+              "id": 92,
+              "ideas": {
+                "1": {
+                  "title": "BufferedReader",
+                  "id": 93
+                },
+                "2": {
+                  "title": "InputStreamReader",
+                  "id": 94
+                }
+              }
+            },
+            "4": {
+              "title": "Writer",
+              "id": 95,
+              "ideas": {
+                "1": {
+                  "title": "BufferedWriter",
+                  "id": 96
+                },
+                "2": {
+                  "title": "OutputStreamWriter",
+                  "id": 97,
+                  "ideas": {
+                    "1": {
+                      "title": "FileWriter",
+                      "id": 99
+                    }
+                  }
+                },
+                "3": {
+                  "title": "PrintWriter",
+                  "id": 98
+                }
+              }
             }
           }
         }
