@@ -208,11 +208,42 @@
           "ideas": {
             "1": {
               "title": "Member",
-              "id": 48
+              "id": 48,
+              "ideas": {
+                "1": {
+                  "title": "Declared as a member of the Outer Class",
+                  "id": 60,
+                  "ideas": {
+                    "1": {
+                      "title": "inner class have access to outer class field",
+                      "id": 62
+                    }
+                  }
+                }
+              }
             },
             "2": {
               "title": "Local Inner ",
-              "id": 49
+              "id": 49,
+              "ideas": {
+                "1": {
+                  "title": "Declared as a local  member of a method of an outer class",
+                  "id": 61,
+                  "ideas": {
+                    "1": {
+                      "title": "Properties:  Only local variables which are Final or effectively Final",
+                      "id": 63,
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<span style=\"color: rgb(79, 79, 79); font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><font face=\"Courier\" size=\"3\">1. No access specifiers*</font></span><div><span style=\"color: rgb(79, 79, 79); font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><font face=\"Courier\" size=\"3\">2. Cannot be declared static and cannot declare static fields or methods\n3. They have access of all the fields and methods of the enclosing class\n4. ONLY have access to \"local variable\" which are final or effectively final</font></span></div>"
+                        },
+                        "style": {}
+                      }
+                    }
+                  }
+                }
+              }
             },
             "3": {
               "title": "Anonymous",
