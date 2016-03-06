@@ -3,18 +3,6 @@
   "id": 1,
   "formatVersion": 2,
   "ideas": {
-    "1": {
-      "title": "Serialization",
-      "id": 2,
-      "attr": {
-        "position": [
-          282.56574118196806,
-          -435.9965286254883,
-          10
-        ],
-        "style": {}
-      }
-    },
     "11": {
       "title": "Concurrency Control",
       "id": 3,
@@ -333,10 +321,6 @@
       "title": "Java 8 Features",
       "id": 31
     },
-    "-1": {
-      "title": "Reflection",
-      "id": 6
-    },
     "-2": {
       "title": "Java IO",
       "id": 7,
@@ -510,6 +494,30 @@
             }
           }
         }
+      }
+    },
+    "0.5": {
+      "title": "Reflection",
+      "id": 6,
+      "attr": {
+        "position": [
+          354.5,
+          -484,
+          11
+        ],
+        "style": {}
+      }
+    },
+    "-1": {
+      "title": "Serialization",
+      "id": 2,
+      "attr": {
+        "position": [
+          103.5,
+          -437,
+          12
+        ],
+        "style": {}
       }
     }
   },
