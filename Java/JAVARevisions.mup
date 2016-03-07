@@ -250,6 +250,25 @@
               "id": 74
             }
           }
+        },
+        "3": {
+          "title": "Errors: Cannot be recovered",
+          "id": 101,
+          "ideas": {
+            "1": {
+              "title": "ExceptionInInitializerError : by JVM when static initializers throws an error",
+              "id": 102
+            },
+            "2": {
+              "title": "StackOverflowError: bu JVM on infinite recursion",
+              "id": 103,
+              "ideas": {}
+            },
+            "3": {
+              "title": "NoClassDefFoundError : by JVM when a class no available at runtime",
+              "id": 106
+            }
+          }
         }
       }
     },
