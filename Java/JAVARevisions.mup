@@ -513,11 +513,24 @@
       "id": 2,
       "attr": {
         "position": [
-          103.5,
-          -437,
+          136.5,
+          -439,
           12
         ],
         "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Why SUID?",
+          "id": 100,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">serialVersionUID\nis used to ensure that same class(That was used during Serialization) is loaded\nduring Deserialization.</p>\n\n<p style=\"margin:0in\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:\n14.0pt\">serialVersionUID is used for version control of object.</span><span style=\"font-family:Calibri;font-size:11.0pt\"><br>\n</span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">If you have\nused Serialization then You might have seen&nbsp;\nserialVersionUID because whenever you implement Serializable interface\nyour IDE will give you warning.</span></p>\n\n<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">&nbsp;</p>\n\n<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">serialVersionUID\nmust be Static and final.You can assign any number to it.</p>"
+            },
+            "style": {}
+          }
+        }
       }
     }
   },
