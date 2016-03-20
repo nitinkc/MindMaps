@@ -537,7 +537,7 @@
           "id": 11
         },
         "2": {
-          "title": "descrive which services are needed  by whivch component - In a configurarion file",
+          "title": "describes which services are needed  by whicch component - In a configurarion file",
           "id": 14
         },
         "3": {
@@ -549,7 +549,7 @@
               "id": 16,
               "ideas": {
                 "1": {
-                  "title": "Contsiner invokes a class container with arguments",
+                  "title": "Container invokes a class container with arguments",
                   "id": 17
                 }
               }
@@ -575,7 +575,7 @@
               "id": 24
             },
             "2": {
-              "title": "easy to test as no singletons ot JNDI lookup",
+              "title": "easy to test as no singletons t0 JNDI lookup",
               "id": 25
             },
             "3": {
@@ -601,7 +601,7 @@
           "id": 30,
           "ideas": {
             "1": {
-              "title": "BeanFactory Contsiner",
+              "title": "BeanFactory Container",
               "id": 31,
               "ideas": {
                 "1": {
@@ -790,7 +790,10 @@
                   "ideas": {
                     "1": {
                       "title": "2 beans of same type and still want to wire only with property --> use @Qualifier with @Autowired",
-                      "id": 113
+                      "id": 113,
+                      "attr": {
+                        "style": {}
+                      }
                     }
                   }
                 }
