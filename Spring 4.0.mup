@@ -482,7 +482,7 @@
               "id": 211,
               "ideas": {
                 "1": {
-                  "title": "interprets user input adn transform it into a model that is represented to the suer by a view",
+                  "title": "interprets user input and transform it into a model that is represented to the user by a view",
                   "id": 212
                 }
               }
@@ -816,12 +816,105 @@
         }
       }
     },
+    "-24": {
+      "title": "JDBC",
+      "id": 189,
+      "ideas": {
+        "1": {
+          "title": "Can be used more effectively using a template class provided by spring framework known as JdbcTemplate",
+          "id": 190,
+          "ideas": {
+            "1": {
+              "title": "resource management and error handling is reduced",
+              "id": 191
+            },
+            "2": {
+              "title": "Provides convinience methods ",
+              "id": 192,
+              "ideas": {
+                "1": {
+                  "title": "concerting dfatabase data into primitives or objects",
+                  "id": 194
+                },
+                "2": {
+                  "title": "custom database error handling",
+                  "id": 195
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Transaction management",
+          "id": 197,
+          "ideas": {
+            "1": {
+              "title": "Programmatic",
+              "id": 198,
+              "ideas": {
+                "1": {
+                  "title": "extreme flexibility but difficult to maintain",
+                  "id": 200
+                }
+              }
+            },
+            "2": {
+              "title": "Declarative",
+              "id": 199,
+              "ideas": {
+                "1": {
+                  "title": "separate transaction from business code",
+                  "id": 201,
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "Use annotation or XML Based configuration",
+                  "id": 203
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "-25": {
+      "title": "ORM Supportr",
+      "id": 217,
+      "ideas": {
+        "1": {
+          "title": "Hibernate, iBatis, JPA, TopLink, JDO",
+          "id": 218
+        },
+        "2": {
+          "title": "2 ways to access Hibernate using Spring",
+          "id": 219,
+          "ideas": {
+            "1": {
+              "title": "IOC with a hibernate Template and Callback",
+              "id": 220
+            },
+            "2": {
+              "title": "Extending HibernateDAOSupport and Applying an AOP Interceptor node",
+              "id": 221,
+              "attr": {
+                "position": [
+                  161.5,
+                  83.5,
+                  1
+                ],
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    },
     "-23": {
       "title": "AOP",
       "id": 6,
       "ideas": {
         "1": {
-          "title": "modularize croiss cutting concerns such a s logging o r transactions",
+          "title": "modularize cross cutting concerns such a s logging o r transactions",
           "id": 28,
           "attr": {
             "position": [
@@ -999,103 +1092,10 @@
       "attr": {
         "style": {},
         "position": [
-          809.00095860949,
-          827.268354783555,
-          16
+          943.5,
+          800,
+          20
         ]
-      }
-    },
-    "-24": {
-      "title": "JDBC",
-      "id": 189,
-      "ideas": {
-        "1": {
-          "title": "Can be used more effectively using a template class provided by spring framework known as JdbcTemplate",
-          "id": 190,
-          "ideas": {
-            "1": {
-              "title": "resource management and error handling is reduced",
-              "id": 191
-            },
-            "2": {
-              "title": "Provides convinience methods ",
-              "id": 192,
-              "ideas": {
-                "1": {
-                  "title": "concerting dfatabase data into primitives or objects",
-                  "id": 194
-                },
-                "2": {
-                  "title": "custom database error handling",
-                  "id": 195
-                }
-              }
-            }
-          }
-        },
-        "2": {
-          "title": "Transaction management",
-          "id": 197,
-          "ideas": {
-            "1": {
-              "title": "Programmatic",
-              "id": 198,
-              "ideas": {
-                "1": {
-                  "title": "extreme flexibility but difficult to maintain",
-                  "id": 200
-                }
-              }
-            },
-            "2": {
-              "title": "Declarative",
-              "id": 199,
-              "ideas": {
-                "1": {
-                  "title": "separate transaction from business code",
-                  "id": 201,
-                  "ideas": {}
-                },
-                "2": {
-                  "title": "Use annotation or XML Based configuration",
-                  "id": 203
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "-25": {
-      "title": "ORM Supportr",
-      "id": 217,
-      "ideas": {
-        "1": {
-          "title": "Hibernate, iBatis, JPA, TopLink, JDO",
-          "id": 218
-        },
-        "2": {
-          "title": "2 ways to access Hibernate using Spring",
-          "id": 219,
-          "ideas": {
-            "1": {
-              "title": "IOC with a hibernate Template and Callback",
-              "id": 220
-            },
-            "2": {
-              "title": "Extending HibernateDAOSupport and Applying an AOP Interceptor node",
-              "id": 221,
-              "attr": {
-                "position": [
-                  161.5,
-                  83.5,
-                  1
-                ],
-                "style": {}
-              }
-            }
-          }
-        }
       }
     }
   },
