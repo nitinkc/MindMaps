@@ -8,19 +8,54 @@
       "id": 2,
       "ideas": {
         "1": {
-          "title": "no attribute",
+          "title": "no attribute@Override",
           "id": 3,
           "ideas": {}
         }
       }
     },
-    "-1": {
+    "11": {
       "title": "Single valued Annotation",
-      "id": 7
+      "id": 7,
+      "attr": {
+        "position": [
+          164.5,
+          62,
+          1
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "@SuppressWarning(\"unchecked\")",
+          "id": 10
+        }
+      }
     },
-    "-11": {
+    "21": {
       "title": "Multivalued Annotation",
-      "id": 8
+      "id": 8,
+      "attr": {
+        "position": [
+          149.5,
+          164,
+          2
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "@WebServlet(name=\"ms\", url=\"/a/b\")",
+          "id": 11
+        }
+      }
+    },
+    "-2": {
+      "title": "Metadata\n Survives Tokenization    phase of \n \n  Compilation->Lexical\n      Analysis -> buffering & Tokenization\n \n Takes data up to runtime\n     (.class)\n Executed by Annotation\n     Processing Tool (Part of JRE)\n",
+      "id": 13,
+      "attr": {
+        "style": {}
+      }
     }
   },
   "links": []
