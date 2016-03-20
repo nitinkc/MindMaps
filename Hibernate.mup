@@ -1,10 +1,30 @@
 {
-  "title": "Hibernate",
+  "title": "Hibernate ORM: MAPS: java class - table name class fieds - table colms",
   "id": 1,
   "formatVersion": 2,
   "attr": {
     "style": {
       "background": "#ffff99"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "Annotation Driven",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "@Entiry MUST have @Id",
+          "id": 6
+        }
+      }
+    },
+    "11": {
+      "title": "XML Driven",
+      "id": 3
+    },
+    "-1": {
+      "title": "Reads hibernate.cfg.xml by default",
+      "id": 5
     }
   }
 }
