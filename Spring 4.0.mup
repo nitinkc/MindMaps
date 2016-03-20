@@ -9,7 +9,7 @@
   },
   "ideas": {
     "2": {
-      "title": "7 Modules",
+      "title": "7 Modules - MAAI-CDW",
       "id": 33,
       "ideas": {
         "1": {
@@ -42,20 +42,7 @@
         "1": {
           "title": "LightWeight",
           "id": 3,
-          "ideas": {
-            "1": {
-              "title": "skfhsdkfhks",
-              "id": 35
-            },
-            "2": {
-              "title": "sdflsdkhfklfd",
-              "id": 36
-            },
-            "3": {
-              "title": "sdfmsdfl",
-              "id": 37
-            }
-          },
+          "ideas": {},
           "attr": {
             "style": {}
           }
@@ -78,7 +65,10 @@
         },
         "6": {
           "title": "Transaction Framework",
-          "id": 44
+          "id": 44,
+          "attr": {
+            "style": {}
+          }
         },
         "7": {
           "title": "Exception Handling",
