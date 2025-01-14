@@ -908,6 +908,195 @@
           }
         }
       }
+    },
+    "-23": {
+      "title": "AOP",
+      "id": 6,
+      "ideas": {
+        "1": {
+          "title": "modularize cross cutting concerns such a s logging o r transactions",
+          "id": 28,
+          "attr": {
+            "position": [
+              167,
+              -259.5,
+              5
+            ],
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "behaviour that cuts accross typical division of responsibility",
+          "id": 29,
+          "attr": {
+            "position": [
+              171,
+              -135.5,
+              6
+            ],
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Aspect (A module which has a set of APIs providing cross-cutting requirements)",
+          "id": 160,
+          "ideas": {
+            "1": {
+              "title": "a logging module would be called AOP aspect for logging.",
+              "id": 162,
+              "attr": {
+                "position": [
+                  231,
+                  -89,
+                  1
+                ],
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "Implemented using ",
+                  "id": 163,
+                  "ideas": {
+                    "1": {
+                      "title": "Regular Classes  (along with the XML schema-based approach)",
+                      "id": 164
+                    },
+                    "2": {
+                      "title": "@Aspect Annotation on regular java classes.(@AspectJ style).",
+                      "id": 165,
+                      "attr": {
+                        "position": [
+                          117,
+                          64.5,
+                          1
+                        ],
+                        "style": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "attr": {
+            "position": [
+              120,
+              51.5,
+              1
+            ],
+            "style": {}
+          }
+        },
+        "4": {
+          "title": "Concern",
+          "id": 166,
+          "ideas": {
+            "1": {
+              "title": "a functionality we want to implement",
+              "id": 167
+            },
+            "2": {
+              "title": "Corss Cutting Concern",
+              "id": 168,
+              "ideas": {
+                "1": {
+                  "title": "concern which is applicable throughout the application and it affects the entire application. e.g. logging , security and data transfer are the concerns which are needed in almost every module of an application, hence are cross-cutting concerns",
+                  "id": 170
+                }
+              }
+            }
+          }
+        },
+        "5": {
+          "title": "Join Point",
+          "id": 171,
+          "ideas": {
+            "1": {
+              "title": "Point in the application where you can plugin your AOP Aspect",
+              "id": 172
+            },
+            "2": {
+              "title": "the actual place in the application where an action will be taken using Spring AOP framework",
+              "id": 173
+            }
+          }
+        },
+        "6": {
+          "title": "Advice",
+          "id": 174,
+          "ideas": {
+            "1": {
+              "title": "Actual action to be taken (piece of code to be executed) either before or after method execution",
+              "id": 175
+            },
+            "2": {
+              "title": "5 Types of advice",
+              "id": 183,
+              "ideas": {
+                "1": {
+                  "title": "before : run advice before a method execution",
+                  "id": 184
+                },
+                "2": {
+                  "title": "after: after method regardless of its outcome",
+                  "id": 185
+                },
+                "3": {
+                  "title": "after-returning : after successful completion of method",
+                  "id": 186
+                },
+                "4": {
+                  "title": "after throwing: if method exits by throwing an exception",
+                  "id": 187
+                },
+                "5": {
+                  "title": "around: before and after the advised method is invoked",
+                  "id": 188,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "7": {
+          "title": "Point cut",
+          "id": 176,
+          "ideas": {
+            "1": {
+              "title": "set of one or more join points where an advice should be executed",
+              "id": 177,
+              "ideas": {
+                "1": {
+                  "title": "can specify pointcuts using expressions or patterns",
+                  "id": 178
+                }
+              }
+            }
+          }
+        },
+        "8": {
+          "title": "Introduction ???",
+          "id": 179
+        },
+        "9": {
+          "title": "Target Objects",
+          "id": 180
+        },
+        "10": {
+          "title": "Weaving",
+          "id": 181
+        }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          943.5,
+          800,
+          20
+        ]
+      }
     }
   },
   "resources": {

@@ -1,0 +1,29 @@
+{
+  "title": "Exception",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Checked Exception",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "Forced by the Compiler to write either try-catch block or use throws exception with method definition",
+          "id": 3
+        }
+      }
+    },
+    "11": {
+      "title": "Unchecked Exception",
+      "id": 4,
+      "attr": {
+        "position": [
+          73.5,
+          86,
+          1
+        ],
+        "style": {}
+      }
+    }
+  }
+}

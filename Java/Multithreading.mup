@@ -69,23 +69,63 @@
       "ideas": {
         "1": {
           "title": "Semaphores",
-          "id": 14
+          "id": 14,
+          "attr": {
+            "position": [
+              171.99658203125,
+              -113.64566386187511,
+              4
+            ],
+            "style": {}
+          }
         },
         "2": {
           "title": "Cyclic Barriers",
-          "id": 15
+          "id": 15,
+          "attr": {
+            "style": {},
+            "position": [
+              175.9896240234375,
+              -56.98945877287122,
+              5
+            ]
+          }
         },
         "3": {
           "title": "Countdown Latches",
-          "id": 16
+          "id": 16,
+          "attr": {
+            "position": [
+              163.0035400390625,
+              -5.159668834121135,
+              1
+            ],
+            "style": {}
+          }
         },
         "4": {
           "title": "Exchangers",
-          "id": 17
+          "id": 17,
+          "attr": {
+            "position": [
+              178.0035400390625,
+              46.67718332785148,
+              2
+            ],
+            "style": {}
+          }
         },
         "5": {
           "title": "Phasers",
-          "id": 18
+          "id": 18,
+          "attr": {
+            "position": [
+              218.9931640625,
+              102.51751449373035,
+              3
+            ],
+            "style": {}
+          }
         }
       }
     },
@@ -108,6 +148,22 @@
       },
       "attr": {
         "style": {}
+      }
+    },
+    "-11": {
+      "title": "Volatile Variable",
+      "id": 24,
+      "ideas": {
+        "1": {
+          "title": "Value never be cached",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "All reads and writes go straight to main memory",
+              "id": 27
+            }
+          }
+        }
       }
     }
   }

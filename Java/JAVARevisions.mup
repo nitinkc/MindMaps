@@ -3,18 +3,6 @@
   "id": 1,
   "formatVersion": 2,
   "ideas": {
-    "1": {
-      "title": "Serialization",
-      "id": 2,
-      "attr": {
-        "position": [
-          282.56574118196806,
-          -435.9965286254883,
-          10
-        ],
-        "style": {}
-      }
-    },
     "11": {
       "title": "Concurrency Control",
       "id": 3,
@@ -30,6 +18,45 @@
         "2": {
           "title": "Concurrent package",
           "id": 5
+        },
+        "3": {
+          "title": "Liveliness Problem",
+          "id": 65,
+          "ideas": {
+            "1": {
+              "title": "Deadlock : ",
+              "id": 66,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "When 2 or more threads are blocked forever.<div><br></div><div>One common strategy to avoid is for all Threads to order their resource requests</div>"
+                },
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "Starvation",
+              "id": 67,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "Occurs when a single thread is perpetually denied access to a shared resource. The thread is still active, but it is unable to complete its work as a result of other threads constantly taking the resource that they are trying to access"
+                },
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "Livelock",
+              "id": 68,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "Conceptually blocked forever. LL is a special case of resource starvation in which 2 or more threads actively try to resolve a deadlock."
+                },
+                "style": {}
+              }
+            }
+          }
         }
       },
       "attr": {
@@ -191,7 +218,59 @@
     },
     "24": {
       "title": "Exception Handling",
-      "id": 28
+      "id": 28,
+      "ideas": {
+        "1": {
+          "title": "Runtime/unchecked exception : not required to be caught",
+          "id": 69,
+          "ideas": {
+            "1": {
+              "title": "MOST COMMON EXCEPTIONS",
+              "id": 71,
+              "attr": {
+                "attachment": {
+                  "contentType": "text/html",
+                  "content": "ArithmaticException : divide by zero<div>ArrayIndexOutOfBounds : illegal index access</div><div>ClassCastException : cast an object to a subclass which it is not an instance</div><div>IllegalArgumentException : method has been passed an illegal or inappropriate argument</div><div>NullPointerException : null reference where an object is required</div><div>NumberFormatException : when an attempt is made to convert a STRING to numeric type</div><div>IllegalStateException : attempting to run an invalid operation in collection adn Concurrency</div><div>UnsupportedOperationException : --do--<br></div>"
+                },
+                "style": {}
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Checked exception: Compiler forces the programmer to HAndle it. A checked exception is ant class that extends expeption",
+          "id": 70,
+          "ideas": {
+            "1": {
+              "title": "java.io.IOException",
+              "id": 73
+            },
+            "2": {
+              "title": "java.sql.SQLException",
+              "id": 74
+            }
+          }
+        },
+        "3": {
+          "title": "Errors: Cannot be recovered",
+          "id": 101,
+          "ideas": {
+            "1": {
+              "title": "ExceptionInInitializerError : by JVM when static initializers throws an error",
+              "id": 102
+            },
+            "2": {
+              "title": "StackOverflowError: bu JVM on infinite recursion",
+              "id": 103,
+              "ideas": {}
+            },
+            "3": {
+              "title": "NoClassDefFoundError : by JVM when a class no available at runtime",
+              "id": 106
+            }
+          }
+        }
+      }
     },
     "34": {
       "title": "Inner Class",
@@ -208,11 +287,42 @@
           "ideas": {
             "1": {
               "title": "Member",
-              "id": 48
+              "id": 48,
+              "ideas": {
+                "1": {
+                  "title": "Declared as a member of the Outer Class",
+                  "id": 60,
+                  "ideas": {
+                    "1": {
+                      "title": "inner class have access to outer class field",
+                      "id": 62
+                    }
+                  }
+                }
+              }
             },
             "2": {
               "title": "Local Inner ",
-              "id": 49
+              "id": 49,
+              "ideas": {
+                "1": {
+                  "title": "Declared as a local  member of a method of an outer class",
+                  "id": 61,
+                  "ideas": {
+                    "1": {
+                      "title": "Properties:  Only local variables which are Final or effectively Final",
+                      "id": 63,
+                      "attr": {
+                        "attachment": {
+                          "contentType": "text/html",
+                          "content": "<span style=\"color: rgb(79, 79, 79); font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><font face=\"Courier\" size=\"3\">1. No access specifiers*</font></span><div><span style=\"color: rgb(79, 79, 79); font-weight: bold; line-height: 18px; text-align: center; white-space: pre-wrap; background-color: rgb(224, 224, 224);\"><font face=\"Courier\" size=\"3\">2. Cannot be declared static and cannot declare static fields or methods\n3. They have access of all the fields and methods of the enclosing class\n4. ONLY have access to \"local variable\" which are final or effectively final</font></span></div>"
+                        },
+                        "style": {}
+                      }
+                    }
+                  }
+                }
+              }
             },
             "3": {
               "title": "Anonymous",
@@ -230,13 +340,108 @@
       "title": "Java 8 Features",
       "id": 31
     },
-    "-1": {
-      "title": "Reflection",
-      "id": 6
-    },
     "-2": {
       "title": "Java IO",
-      "id": 7
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "Streams : 4 abstract classes",
+          "id": 75,
+          "ideas": {
+            "1": {
+              "title": "InputStream",
+              "id": 76,
+              "ideas": {
+                "1": {
+                  "title": "FileInputStream",
+                  "id": 77
+                },
+                "2": {
+                  "title": "FilterInputStream",
+                  "id": 78,
+                  "ideas": {
+                    "1": {
+                      "title": "BufferedInputStream",
+                      "id": 79,
+                      "ideas": {}
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ObjectInputStream",
+                  "id": 83
+                }
+              }
+            },
+            "2": {
+              "title": "OutputStream",
+              "id": 84,
+              "ideas": {
+                "1": {
+                  "title": "FileOutputStream",
+                  "id": 85
+                },
+                "2": {
+                  "title": "FilterOutputStream",
+                  "id": 86,
+                  "ideas": {
+                    "1": {
+                      "title": "BufferedOutputStream",
+                      "id": 89
+                    },
+                    "2": {
+                      "title": "PrintStream",
+                      "id": 90
+                    }
+                  }
+                },
+                "3": {
+                  "title": "ObjectOutputStream",
+                  "id": 88
+                }
+              }
+            },
+            "3": {
+              "title": "Reader",
+              "id": 92,
+              "ideas": {
+                "1": {
+                  "title": "BufferedReader",
+                  "id": 93
+                },
+                "2": {
+                  "title": "InputStreamReader",
+                  "id": 94
+                }
+              }
+            },
+            "4": {
+              "title": "Writer",
+              "id": 95,
+              "ideas": {
+                "1": {
+                  "title": "BufferedWriter",
+                  "id": 96
+                },
+                "2": {
+                  "title": "OutputStreamWriter",
+                  "id": 97,
+                  "ideas": {
+                    "1": {
+                      "title": "FileWriter",
+                      "id": 99
+                    }
+                  }
+                },
+                "3": {
+                  "title": "PrintWriter",
+                  "id": 98
+                }
+              }
+            }
+          }
+        }
+      }
     },
     "-12": {
       "title": "Garbage Collections",
@@ -252,7 +457,8 @@
           "ideas": {
             "1": {
               "title": "Strong References",
-              "id": 36
+              "id": 36,
+              "ideas": {}
             },
             "2": {
               "title": "Weak references",
@@ -305,6 +511,43 @@
               "title": "Shares common object ",
               "id": 58
             }
+          }
+        }
+      }
+    },
+    "0.5": {
+      "title": "Reflection",
+      "id": 6,
+      "attr": {
+        "position": [
+          354.5,
+          -484,
+          11
+        ],
+        "style": {}
+      }
+    },
+    "-1": {
+      "title": "Serialization",
+      "id": 2,
+      "attr": {
+        "position": [
+          136.5,
+          -439,
+          12
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Why SUID?",
+          "id": 100,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">serialVersionUID\nis used to ensure that same class(That was used during Serialization) is loaded\nduring Deserialization.</p>\n\n<p style=\"margin:0in\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:\n14.0pt\">serialVersionUID is used for version control of object.</span><span style=\"font-family:Calibri;font-size:11.0pt\"><br>\n</span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">If you have\nused Serialization then You might have seen&nbsp;\nserialVersionUID because whenever you implement Serializable interface\nyour IDE will give you warning.</span></p>\n\n<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">&nbsp;</p>\n\n<p style=\"margin:0in;font-family:&quot;Times New Roman&quot;;font-size:14.0pt\">serialVersionUID\nmust be Static and final.You can assign any number to it.</p>"
+            },
+            "style": {}
           }
         }
       }

@@ -1,5 +1,5 @@
 {
-  "title": "Spring 4.0",
+  "title": "AOP",
   "id": 1,
   "formatVersion": 2,
   "attr": {
@@ -8,906 +8,189 @@
     }
   },
   "ideas": {
-    "2": {
-      "title": "7 Modules - MAAI-CDW",
-      "id": 33,
-      "ideas": {
-        "1": {
-          "title": "picture",
-          "id": 34,
-          "attr": {
-            "style": {},
-            "icon": {
-              "url": "internal:2/318899f8-b918-8545-8655-21e1e43e3099/",
-              "width": 720,
-              "height": 540,
-              "position": "bottom"
-            }
-          }
-        }
-      },
+    "1": {
+      "title": "AOP",
       "attr": {
-        "style": {},
-        "position": [
-          327.5,
-          -1205,
-          9
-        ]
-      }
-    },
-    "3": {
-      "title": "Benefits",
-      "id": 38,
+        "style": {}
+      },
       "ideas": {
         "1": {
-          "title": "LightWeight",
-          "id": 3,
-          "ideas": {},
+          "title": "modularize cross cutting concerns such a s logging o r transactions",
           "attr": {
+            "position": [
+              167,
+              -259.5,
+              5
+            ],
             "style": {}
-          }
+          },
+          "id": 277
         },
         "2": {
-          "title": "IOC",
-          "id": 40
+          "title": "behaviour that cuts accross typical division of responsibility",
+          "attr": {
+            "position": [
+              171,
+              -135.5,
+              6
+            ],
+            "style": {}
+          },
+          "id": 278
         },
         "3": {
-          "title": "AOP",
-          "id": 41
+          "title": "Aspect (A module which has a set of APIs providing cross-cutting requirements)",
+          "attr": {
+            "position": [
+              120,
+              51.5,
+              1
+            ],
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "a logging module would be called AOP aspect for logging.",
+              "attr": {
+                "position": [
+                  231,
+                  -89,
+                  1
+                ],
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "Implemented using ",
+                  "ideas": {
+                    "1": {
+                      "title": "Regular Classes  (along with the XML schema-based approach)",
+                      "id": 282
+                    },
+                    "2": {
+                      "title": "@Aspect Annotation on regular java classes.(@AspectJ style).",
+                      "attr": {
+                        "position": [
+                          117,
+                          64.5,
+                          1
+                        ],
+                        "style": {}
+                      },
+                      "id": 283
+                    }
+                  },
+                  "id": 281
+                }
+              },
+              "id": 280
+            }
+          },
+          "id": 279
         },
         "4": {
-          "title": "Container",
-          "id": 42
+          "title": "Concern",
+          "ideas": {
+            "1": {
+              "title": "a functionality we want to implement",
+              "id": 285
+            },
+            "2": {
+              "title": "Corss Cutting Concern",
+              "ideas": {
+                "1": {
+                  "title": "concern which is applicable throughout the application and it affects the entire application. e.g. logging , security and data transfer are the concerns which are needed in almost every module of an application, hence are cross-cutting concerns",
+                  "id": 287
+                }
+              },
+              "id": 286
+            }
+          },
+          "id": 284
         },
         "5": {
-          "title": "MVC Framework",
-          "id": 43
+          "title": "Join Point",
+          "ideas": {
+            "1": {
+              "title": "Point in the application where you can plugin your AOP Aspect",
+              "id": 289
+            },
+            "2": {
+              "title": "the actual place in the application where an action will be taken using Spring AOP framework",
+              "id": 290
+            }
+          },
+          "id": 288
         },
         "6": {
-          "title": "Transaction Framework",
-          "id": 44,
-          "attr": {
-            "style": {}
-          }
-        },
-        "7": {
-          "title": "Exception Handling",
-          "id": 45
-        }
-      },
-      "attr": {
-        "position": [
-          221.5,
-          -788,
-          10
-        ],
-        "style": {}
-      }
-    },
-    "4": {
-      "title": "Spring Beans",
-      "id": 52,
-      "ideas": {
-        "1": {
-          "title": "An object that is instantiated, assembled and managed by a Spring IOC Container",
-          "id": 53
-        },
-        "3": {
-          "title": "How to Add a bean",
-          "id": 56,
-          "ideas": {},
-          "attr": {
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<pre class=\"prettyprint prettyprinted\" style=\"box-sizing: border-box; padding: 5px; margin-bottom: 10px; border-radius: 0px; width: 708px; line-height: 16px; border-color: rgb(214, 214, 214); font-size: 12px; overflow: auto; color: rgb(49, 49, 49); background-color: rgb(238, 238, 238);\"><font face=\"Courier\"><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">&lt;?</span><span class=\"pln\" style=\"box-sizing: border-box;\">xml version</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"str\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"1.0\"</span><span class=\"pln\" style=\"box-sizing: border-box;\"> encoding</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"str\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"UTF-8\"</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">?&gt;</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n\n</span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&lt;beans</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">xmlns</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"http://www.springframework.org/schema/beans\"</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n    </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">xmlns:xsi</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"http://www.w3.org/2001/XMLSchema-instance\"</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n    </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">xsi:schemaLocation</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"http://www.springframework.org/schema/beans\n    http://www.springframework.org/schema/beans/spring-beans.xsd\"</span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&gt;</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n\n   </span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&lt;bean</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">id</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"helloWorld\"</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">class</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"com.tutorialspoint.HelloWorld\"</span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&gt;</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n       </span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&lt;property</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">name</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"message\"</span><span class=\"pln\" style=\"box-sizing: border-box;\"> </span><span class=\"atn\" style=\"box-sizing: border-box; color: rgb(127, 0, 85);\">value</span><span class=\"pun\" style=\"box-sizing: border-box; color: rgb(102, 102, 0);\">=</span><span class=\"atv\" style=\"box-sizing: border-box; color: rgb(0, 136, 0);\">\"Hello World!\"</span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">/&gt;</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n   </span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&lt;/bean&gt;</span><span class=\"pln\" style=\"box-sizing: border-box;\">\n\n</span><span class=\"tag\" style=\"box-sizing: border-box; color: rgb(0, 0, 136);\">&lt;/beans&gt;</span></font></pre>"
-            },
-            "style": {}
-          }
-        },
-        "4": {
-          "title": "BeanScope (set while defining a bean)",
-          "id": 58,
+          "title": "Advice",
           "ideas": {
             "1": {
-              "title": "DEFAULT: Singleton (single instance per IOC container)",
-              "id": 60,
-              "ideas": {
-                "1": {
-                  "title": "NOT Thread SAFE",
-                  "id": 65
-                }
-              }
+              "title": "Actual action to be taken (piece of code to be executed) either before or after method execution",
+              "id": 292
             },
             "2": {
-              "title": "prototype(any number of object instances)",
-              "id": 61,
-              "ideas": {}
-            },
-            "4": {
-              "title": "session (HTTP Session)",
-              "id": 63
-            },
-            "5": {
-              "title": "global-session (global Http Session",
-              "id": 64,
-              "attr": {
-                "position": [
-                  204.5,
-                  156,
-                  1
-                ],
-                "style": {}
-              },
+              "title": "5 Types of advice",
               "ideas": {
                 "1": {
-                  "title": "used in the portlet",
-                  "id": 227
-                }
-              }
-            },
-            "4.5": {
-              "title": "request (HTTP Request). Only valid in context web-aware Spring Application Context",
-              "id": 62,
-              "attr": {
-                "style": {}
-              }
-            }
-          }
-        },
-        "5": {
-          "title": "Bean Life Cycle",
-          "id": 66,
-          "ideas": {},
-          "attr": {
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<ul class=\"list\" style=\"box-sizing: border-box; color: rgb(49, 49, 49); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; line-height: 22px;\"><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Instantiate</b>&nbsp;- spring container -&gt; finds -&gt; the bean's definition from the XML file &nbsp;-&gt; instantiates the bean..</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Populate properties</b>&nbsp;- Using the dependency injection -&gt; spring populates all of the properties as specified in the bean definition..</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Set Bean Name</b>&nbsp;- If the bean implements BeanNameAware interface, spring passes the bean's id to setBeanName() method.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Set Bean factory</b>&nbsp;- If Bean implements BeanFactoryAware interface, spring passes the beanfactory to setBeanFactory() method.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Pre Initialization</b>&nbsp;- Also called postprocess of bean. If there are any bean BeanPostProcessors associated with the bean, Spring calls postProcesserBeforeInitialization() method.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Initialize beans</b>&nbsp;- If the bean implements IntializingBean,its afterPropertySet() method is called. If the bean has init method declaration, the specified initialization method is called.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Post Initialization</b>&nbsp;- If there are any BeanPostProcessors associated with the bean, their postProcessAfterInitialization() methods will be called.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Ready to use</b>&nbsp;- Now the bean is ready to use by the application.</p></li><li style=\"box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(&quot;/images/icon-bullet.png&quot;) 0px 4px no-repeat;\"><p style=\"box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-size: 15px !important;\"><b style=\"box-sizing: border-box;\">Destroy</b>&nbsp;- If the bean implements DisposableBean , it will call the destroy() method .</p></li></ul>"
-            },
-            "style": {},
-            "position": [
-              336.5,
-              290.25,
-              2
-            ]
-          }
-        },
-        "6": {
-          "title": "Inner Bean",
-          "id": 68,
-          "ideas": {
-            "1": {
-              "title": "bean element inside <property/> or <constructor-arg/>",
-              "id": 69,
-              "attr": {
-                "position": [
-                  88.5,
-                  -105.5,
-                  1
-                ],
-                "style": {}
-              }
-            },
-            "2": {
-              "title": "Always anonymous (bean id or name not required)",
-              "id": 70
-            },
-            "3": {
-              "title": "Always scoped as prototyped",
-              "id": 71
-            }
-          },
-          "attr": {
-            "position": [
-              497.5,
-              404.375,
-              1
-            ],
-            "style": {}
-          }
-        },
-        "7": {
-          "title": "Bean Autowiring (5 modes)",
-          "id": 83,
-          "ideas": {
-            "1": {
-              "title": "no (DEFAULT) use explicit bean reference for auto wiring",
-              "id": 86
-            },
-            "2": {
-              "title": "byName (property name)",
-              "id": 87
-            },
-            "3": {
-              "title": "byType (property datatype)",
-              "id": 88,
-              "ideas": {
-                "1": {
-                  "title": "exception is raised",
-                  "id": 91
-                }
-              }
-            },
-            "4": {
-              "title": "constructor",
-              "id": 89,
-              "ideas": {
-                "1": {
-                  "title": "error is raised if not found",
-                  "id": 90
-                }
-              }
-            },
-            "5": {
-              "title": "autodetect",
-              "id": 92,
-              "ideas": {
-                "1": {
-                  "title": "first autowire by constructor and then by type",
-                  "id": 93
-                }
-              }
-            },
-            "6": {
-              "title": "LIMITATIONS",
-              "id": 94,
-              "ideas": {
-                "1": {
-                  "title": "Overriding possibility",
-                  "id": 97,
-                  "ideas": {}
+                  "title": "before : run advice before a method execution",
+                  "id": 294
                 },
                 "2": {
-                  "title": "primitive datatype",
-                  "id": 99
+                  "title": "after: after method regardless of its outcome",
+                  "id": 295
                 },
                 "3": {
-                  "title": "Confusing nature",
-                  "id": 100
-                }
-              }
-            }
-          },
-          "attr": {
-            "attachment": {
-              "contentType": "text/html",
-              "content": "<span style=\"color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; text-align: justify;\">The Spring container is able to autowire relationships between collaborating beans. This means that it is possible to automatically let Spring resolve collaborators (other beans) for your bean by inspecting the contents of the BeanFactory without using &lt;constructor-arg&gt; and &lt;property&gt; elements.</span>"
-            },
-            "style": {}
-          }
-        },
-        "4.5": {
-          "title": "How to create",
-          "id": 54,
-          "ideas": {
-            "1": {
-              "title": "3 ways",
-              "id": 223,
-              "ideas": {
-                "1": {
-                  "title": "2.xaml",
-                  "id": 224
-                },
-                "3": {
-                  "title": "post constict3.",
-                  "id": 226
-                },
-                "0.5": {
-                  "title": "3. init method",
-                  "id": 225,
-                  "attr": {
-                    "style": {}
-                  }
-                }
-              }
-            }
-          },
-          "attr": {
-            "style": {}
-          }
-        }
-      },
-      "attr": {
-        "position": [
-          543.4844906265671,
-          -415.4322570509437,
-          18
-        ],
-        "style": {}
-      }
-    },
-    "14": {
-      "title": "Injecting java collection in Spring",
-      "id": 72,
-      "ideas": {
-        "1": {
-          "title": "<list>",
-          "id": 73,
-          "ideas": {}
-        },
-        "2": {
-          "title": "<set>",
-          "id": 75
-        },
-        "3": {
-          "title": "<map>",
-          "id": 76,
-          "ideas": {
-            "1": {
-              "title": "name-value pair where name and value can be of anytype",
-              "id": 77,
-              "ideas": {}
-            }
-          }
-        },
-        "4": {
-          "title": "<props>",
-          "id": 80,
-          "ideas": {
-            "1": {
-              "title": "name-value pairs where both name and value are Strings",
-              "id": 81
-            }
-          }
-        }
-      },
-      "attr": {
-        "style": {},
-        "position": [
-          182.4907162125046,
-          -37.42926632828744,
-          19
-        ]
-      }
-    },
-    "15": {
-      "title": "Spring event handling",
-      "id": 133,
-      "ideas": {
-        "1": {
-          "title": "in the ApplicationContext",
-          "id": 134,
-          "ideas": {
-            "1": {
-              "title": "provided through the ApplicationEvent Class & ApplicationListener Interface",
-              "id": 135
-            }
-          }
-        },
-        "2": {
-          "title": "Standard Events",
-          "id": 136,
-          "ideas": {
-            "1": {
-              "title": "ContextRefreshEvent",
-              "id": 137,
-              "ideas": {
-                "1": {
-                  "title": "This event is published when the ApplicationContext is either initialized or refreshed",
-                  "id": 139,
-                  "ideas": {
-                    "1": {
-                      "title": "can also be raised using the refresh() method on the ConfigurableApplicationContext interface",
-                      "id": 141
-                    }
-                  }
-                }
-              }
-            },
-            "2": {
-              "title": "ContextStartedEvent",
-              "id": 143,
-              "ideas": {
-                "1": {
-                  "title": "published when the ApplicationContext is started using the start() method on the ConfigurableApplicationContext interface",
-                  "id": 145,
-                  "ideas": {
-                    "1": {
-                      "title": "can poll your database or you can re/start any stopped application after receiving this event",
-                      "id": 146
-                    }
-                  }
-                }
-              }
-            },
-            "3": {
-              "title": "ContextStoppedEvent",
-              "id": 148,
-              "ideas": {
-                "1": {
-                  "title": "published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface",
-                  "id": 150,
-                  "ideas": {
-                    "1": {
-                      "title": "can do required housekeep work after receiving this event",
-                      "id": 152
-                    }
-                  }
-                }
-              }
-            },
-            "4": {
-              "title": "ContextClosedEvent",
-              "id": 153,
-              "ideas": {
-                "1": {
-                  "title": " ApplicationContext is closed using the close() method on the ConfigurableApplicationContext interface",
-                  "id": 155
-                }
-              }
-            },
-            "5": {
-              "title": "RequestHandledEvent",
-              "id": 156,
-              "ideas": {
-                "1": {
-                  "title": "a web-specific event telling all beans that an HTTP request has been serviced",
-                  "id": 158
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "16": {
-      "title": "Spring MVC Frameworks",
-      "id": 204,
-      "ideas": {
-        "1": {
-          "title": "DispatcherServlet",
-          "id": 206,
-          "ideas": {
-            "1": {
-              "title": "Handles all HTTP request and responses",
-              "id": 207
-            }
-          }
-        },
-        "2": {
-          "title": "WebApplicationContext",
-          "id": 208,
-          "ideas": {
-            "1": {
-              "title": "Extention of ApplicationContext with SOME EXTRA features. Differs from AC in that it can resolve themes.",
-              "id": 209
-            }
-          }
-        },
-        "3": {
-          "title": "Controller ",
-          "id": 210,
-          "ideas": {
-            "1": {
-              "title": "Provides access to the application behavior defined through service interface",
-              "id": 211,
-              "ideas": {
-                "1": {
-                  "title": "interprets user input and transform it into a model that is represented to the user by a view",
-                  "id": 212
-                }
-              }
-            },
-            "2": {
-              "title": "@Controller",
-              "id": 213,
-              "ideas": {
-                "1": {
-                  "title": "the particular class serves the role of a controller",
-                  "id": 214
-                }
-              }
-            },
-            "3": {
-              "title": "@RequestMapping",
-              "id": 215,
-              "ideas": {
-                "1": {
-                  "title": "map URL to  a class or particular handler method",
-                  "id": 216
-                }
-              }
-            }
-          }
-        }
-      },
-      "attr": {
-        "attachment": {
-          "contentType": "text/html",
-          "content": "<span style=\"color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; text-align: justify;\">The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.</span>"
-        },
-        "style": {}
-      }
-    },
-    "-1": {
-      "title": "IOC/Dep. Injection",
-      "id": 5,
-      "ideas": {
-        "1": {
-          "title": "Inversion Control is General Control. Dependency Injection is concrete example",
-          "id": 11
-        },
-        "2": {
-          "title": "describes which services are needed  by whicch component - In a configurarion file",
-          "id": 14
-        },
-        "3": {
-          "title": "Types of IOC (DI)",
-          "id": 15,
-          "ideas": {
-            "1": {
-              "title": "Constructor based Dependency Injection",
-              "id": 16,
-              "ideas": {
-                "1": {
-                  "title": "Container invokes a class container with arguments",
-                  "id": 17
-                }
-              }
-            },
-            "2": {
-              "title": "Setter based dependency injection",
-              "id": 20,
-              "ideas": {
-                "1": {
-                  "title": "container calling setter methods on your beans after invoking a no-argument constructor",
-                  "id": 21
-                }
-              }
-            }
-          }
-        },
-        "4": {
-          "title": "Benefits of IOC",
-          "id": 23,
-          "ideas": {
-            "1": {
-              "title": "minimizes amount of code",
-              "id": 24
-            },
-            "2": {
-              "title": "easy to test as no singletons t0 JNDI lookup",
-              "id": 25
-            },
-            "3": {
-              "title": "Loose coupling is promoted",
-              "id": 26
-            },
-            "4": {
-              "title": "IOC Container supports lazy and eager loading",
-              "id": 27
-            }
-          },
-          "attr": {
-            "position": [
-              355.4992801426931,
-              188.91553813750738,
-              2
-            ],
-            "style": {}
-          }
-        },
-        "5": {
-          "title": "Types of IOC Containers",
-          "id": 30,
-          "ideas": {
-            "1": {
-              "title": "BeanFactory Container",
-              "id": 31,
-              "ideas": {
-                "1": {
-                  "title": "XmlBeanFactory Class",
-                  "id": 46
-                }
-              },
-              "attr": {
-                "position": [
-                  228.5,
-                  -66.5,
-                  1
-                ],
-                "style": {}
-              }
-            },
-            "2": {
-              "title": "Spring ApplicationContext Container (Adv will all facility of \nBean Factory container)",
-              "id": 32,
-              "ideas": {
-                "1": {
-                  "title": "FileSystemXmlApplicationContext",
-                  "id": 47
-                },
-                "2": {
-                  "title": "ClassPathXmlApplicationContext",
-                  "id": 48
-                },
-                "3": {
-                  "title": "WebXmlApplicationContext",
-                  "id": 49
-                }
-              },
-              "attr": {
-                "position": [
-                  87.5,
-                  67.125,
-                  2
-                ],
-                "style": {}
-              }
-            },
-            "3": {
-              "title": "Differences between the two",
-              "id": 51
-            }
-          },
-          "attr": {
-            "position": [
-              684.5,
-              371.1875,
-              1
-            ],
-            "style": {}
-          }
-        }
-      },
-      "attr": {
-        "position": [
-          188.01749913683375,
-          -925.687710161614,
-          14
-        ],
-        "style": {}
-      }
-    },
-    "-13": {
-      "title": "JSR 250 based annotation",
-      "id": 114,
-      "ideas": {
-        "1": {
-          "title": "@PostConstruct",
-          "id": 119,
-          "ideas": {
-            "1": {
-              "title": "alternative to initialization callback",
-              "id": 122
-            }
-          }
-        },
-        "2": {
-          "title": "@PreDestroy",
-          "id": 120,
-          "ideas": {
-            "1": {
-              "title": "alternate to destruction callback",
-              "id": 123
-            }
-          }
-        },
-        "3": {
-          "title": "@Resource",
-          "id": 121,
-          "ideas": {
-            "1": {
-              "title": "used on fields or setter methods. Follows byName autowiring semantics",
-              "id": 124
-            }
-          }
-        }
-      },
-      "attr": {
-        "style": {},
-        "position": [
-          268.5,
-          495,
-          13
-        ]
-      }
-    },
-    "-6": {
-      "title": "Spring Configurations",
-      "id": 125,
-      "attr": {
-        "style": {},
-        "position": [
-          170.01469151964625,
-          53.50241595419129,
-          17
-        ],
-        "attachment": {
-          "contentType": "text/html",
-          "content": "<span style=\"color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; text-align: justify;\">Spring configuration file is an XML file. This file contains the classes information and describes how these classes are configured and introduced to each other.</span>"
-        }
-      },
-      "ideas": {
-        "1": {
-          "title": "XML Based Configuration",
-          "id": 126,
-          "attr": {
-            "position": [
-              170.03737060915023,
-              -327.1586323813224,
-              1
-            ],
-            "style": {}
-          }
-        },
-        "2": {
-          "title": "Annotation-based configuration",
-          "id": 127,
-          "ideas": {
-            "1": {
-              "title": "Annotation Based Container Configuration",
-              "id": 101,
-              "ideas": {
-                "1": {
-                  "title": "Alternative to XML Setup. Instead of XML to describe bean wiring, use annotation on the relevant class, method or field",
-                  "id": 102
-                },
-                "2": {
-                  "title": "Turn on by<context:annotation-config> in Spring configuration file",
-                  "id": 105
-                },
-                "3": {
-                  "title": "@Required",
-                  "id": 107,
-                  "ideas": {
-                    "1": {
-                      "title": "throws beanInitialization Exception",
-                      "id": 109
-                    }
-                  }
+                  "title": "after-returning : after successful completion of method",
+                  "id": 296
                 },
                 "4": {
-                  "title": "@autowired",
-                  "id": 108,
-                  "ideas": {
-                    "1": {
-                      "title": "the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.",
-                      "id": 110,
-                      "attr": {
-                        "style": {},
-                        "position": [
-                          203.04084198366206,
-                          -59.15515337741613,
-                          1
-                        ]
-                      }
-                    }
-                  }
+                  "title": "after throwing: if method exits by throwing an exception",
+                  "id": 297
                 },
                 "5": {
-                  "title": "Qualifier",
-                  "id": 111,
-                  "ideas": {
-                    "1": {
-                      "title": "2 beans of same type and still want to wire only with property --> use @Qualifier with @Autowired",
-                      "id": 113,
-                      "attr": {
-                        "style": {}
-                      }
-                    }
-                  }
+                  "title": "around: before and after the advised method is invoked",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 298
                 }
               },
-              "attr": {
-                "style": {}
-              }
+              "id": 293
             }
-          }
+          },
+          "id": 291
         },
-        "3": {
-          "title": "Java-based configuration",
-          "id": 128,
+        "7": {
+          "title": "Point cut",
           "ideas": {
             "1": {
-              "title": "Spring Configuration without XML, with the help of java-based annotations",
-              "id": 130,
+              "title": "set of one or more join points where an advice should be executed",
               "ideas": {
                 "1": {
-                  "title": "@Configuration tells IOC Container that this class is to be used as a source of bean definition",
-                  "id": 131
-                },
-                "2": {
-                  "title": "@Bean tells Spring that the method annotated with @Bean will return an object that should be registered as a bean in Spring Application Context",
-                  "id": 132
+                  "title": "can specify pointcuts using expressions or patterns",
+                  "id": 301
                 }
-              }
+              },
+              "id": 300
             }
-          }
-        }
-      }
-    },
-    "-24": {
-      "title": "JDBC",
-      "id": 189,
-      "ideas": {
-        "1": {
-          "title": "Can be used more effectively using a template class provided by spring framework known as JdbcTemplate",
-          "id": 190,
-          "ideas": {
-            "1": {
-              "title": "resource management and error handling is reduced",
-              "id": 191
-            },
-            "2": {
-              "title": "Provides convinience methods ",
-              "id": 192,
-              "ideas": {
-                "1": {
-                  "title": "concerting dfatabase data into primitives or objects",
-                  "id": 194
-                },
-                "2": {
-                  "title": "custom database error handling",
-                  "id": 195
-                }
-              }
-            }
-          }
+          },
+          "id": 299
         },
-        "2": {
-          "title": "Transaction management",
-          "id": 197,
-          "ideas": {
-            "1": {
-              "title": "Programmatic",
-              "id": 198,
-              "ideas": {
-                "1": {
-                  "title": "extreme flexibility but difficult to maintain",
-                  "id": 200
-                }
-              }
-            },
-            "2": {
-              "title": "Declarative",
-              "id": 199,
-              "ideas": {
-                "1": {
-                  "title": "separate transaction from business code",
-                  "id": 201,
-                  "ideas": {}
-                },
-                "2": {
-                  "title": "Use annotation or XML Based configuration",
-                  "id": 203
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "-25": {
-      "title": "ORM Supportr",
-      "id": 217,
-      "ideas": {
-        "1": {
-          "title": "Hibernate, iBatis, JPA, TopLink, JDO",
-          "id": 218
+        "8": {
+          "title": "Introduction ???",
+          "id": 302
         },
-        "2": {
-          "title": "2 ways to access Hibernate using Spring",
-          "id": 219,
-          "ideas": {
-            "1": {
-              "title": "IOC with a hibernate Template and Callback",
-              "id": 220
-            },
-            "2": {
-              "title": "Extending HibernateDAOSupport and Applying an AOP Interceptor node",
-              "id": 221,
-              "attr": {
-                "position": [
-                  161.5,
-                  83.5,
-                  1
-                ],
-                "style": {}
-              }
-            }
-          }
+        "9": {
+          "title": "Target Objects",
+          "id": 303
+        },
+        "10": {
+          "title": "Weaving",
+          "id": 304
         }
-      }
+      },
+      "id": 276
     }
   },
   "resources": {

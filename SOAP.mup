@@ -1,0 +1,118 @@
+{
+  "title": "SOAP21",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "XML Schema",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "structure",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "simple types",
+              "id": 4
+            },
+            "2": {
+              "title": "complex types",
+              "id": 5
+            }
+          }
+        },
+        "2": {
+          "title": "Defines data model",
+          "id": 6
+        }
+      }
+    },
+    "2": {
+      "title": "HTTP",
+      "id": 12,
+      "ideas": {
+        "1": {
+          "title": "GET",
+          "id": 13
+        },
+        "2": {
+          "title": "PUT",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "Idempotent",
+              "id": 15,
+              "ideas": {}
+            }
+          }
+        },
+        "3": {
+          "title": "POST",
+          "id": 19
+        },
+        "4": {
+          "title": "DELETE",
+          "id": 20
+        }
+      }
+    },
+    "-1": {
+      "title": "SOAP Message",
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "Envelope element",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "header (optional)",
+              "id": 10
+            },
+            "2": {
+              "title": "body (mandatory)",
+              "id": 11
+            }
+          }
+        }
+      }
+    },
+    "-2": {
+      "title": "WSDL",
+      "id": 21,
+      "ideas": {
+        "1": {
+          "title": "root",
+          "id": 22
+        },
+        "2": {
+          "title": "contains",
+          "id": 23,
+          "ideas": {
+            "1": {
+              "title": "abstract element",
+              "id": 24
+            },
+            "2": {
+              "title": "concrete element",
+              "id": 25
+            }
+          }
+        },
+        "3": {
+          "title": "definition parts",
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "abstract description",
+              "id": 30
+            },
+            "2": {
+              "title": "concrete discription",
+              "id": 31
+            }
+          }
+        }
+      }
+    }
+  }
+}

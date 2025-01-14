@@ -1,0 +1,77 @@
+{
+  "title": "JSP",
+  "id": 1,
+  "formatVersion": 2,
+  "attr": {
+    "style": {
+      "background": "#ffff00"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "Directives",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "Page Directive",
+          "id": 4
+        },
+        "2": {
+          "title": "Include Directive",
+          "id": 5
+        },
+        "3": {
+          "title": "Taglib Directive",
+          "id": 6
+        }
+      }
+    },
+    "2": {
+      "title": "9 JSP Implicit Objects",
+      "id": 12,
+      "ideas": {
+        "1": {
+          "title": "request, response",
+          "id": 13
+        },
+        "2": {
+          "title": "config",
+          "id": 14
+        },
+        "3": {
+          "title": "page, pageContext application",
+          "id": 15
+        },
+        "4": {
+          "title": "out, exception, session",
+          "id": 16
+        }
+      }
+    },
+    "-1": {
+      "title": "Tags",
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "Scriptlet %",
+          "id": 9,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<p style=\"margin-top: 4.8pt; margin-bottom: 0pt; margin-left: 0.3in; text-indent: -0.3in; direction: ltr; unicode-bidi: embed; word-break: normal;\"><span style=\"font-size:20.0pt;\nfont-family:Constantia;mso-ascii-font-family:Constantia;mso-ascii-theme-font:\nminor-latin;mso-fareast-theme-font:minor-fareast;mso-bidi-theme-font:minor-bidi;\ncolor:black;mso-color-index:1;mso-font-kerning:12.0pt;language:en-US;\nmso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:text1;\nmso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%\">&lt;%&nbsp;&nbsp;</span></p>\n\n<p style=\"margin-top: 4.8pt; margin-bottom: 0pt; margin-left: 0.3in; text-indent: -0.3in; direction: ltr; unicode-bidi: embed; word-break: normal;\"><span style=\"font-size:20.0pt;\nfont-family:Constantia;mso-ascii-font-family:Constantia;mso-ascii-theme-font:\nminor-latin;mso-fareast-theme-font:minor-fareast;mso-bidi-theme-font:minor-bidi;\ncolor:black;mso-color-index:1;mso-font-kerning:12.0pt;language:en-US;\nmso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:text1;\nmso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%\">String&nbsp;name=request.getParameter</span><span style=\"text-indent: -0.3in; font-size: 20pt; font-family: Constantia; color: black;\">(\"</span><span style=\"text-indent: -0.3in; font-size: 20pt; font-family: Constantia; color: black;\">uname</span><span style=\"text-indent: -0.3in; font-size: 20pt; font-family: Constantia; color: black;\">\"); &nbsp;</span></p>\n\n<p style=\"margin-top: 4.8pt; margin-bottom: 0pt; margin-left: 0.3in; text-indent: -0.3in; direction: ltr; unicode-bidi: embed; word-break: normal;\"><span style=\"font-size:20.0pt;\nfont-family:Constantia;mso-ascii-font-family:Constantia;mso-ascii-theme-font:\nminor-latin;mso-fareast-theme-font:minor-fareast;mso-bidi-theme-font:minor-bidi;\ncolor:black;mso-color-index:1;mso-font-kerning:12.0pt;language:en-US;\nmso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:text1;\nmso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%\">out.print(\"welcome&nbsp;\"+name);&nbsp;&nbsp;</span></p>\n\n<p style=\"margin-top: 4.8pt; margin-bottom: 0pt; margin-left: 0.3in; text-indent: -0.3in; direction: ltr; unicode-bidi: embed; word-break: normal;\"><span style=\"font-size:20.0pt;\nfont-family:Constantia;mso-ascii-font-family:Constantia;mso-ascii-theme-font:\nminor-latin;mso-fareast-theme-font:minor-fareast;mso-bidi-theme-font:minor-bidi;\ncolor:black;mso-color-index:1;mso-font-kerning:12.0pt;language:en-US;\nmso-style-textfill-type:solid;mso-style-textfill-fill-themecolor:text1;\nmso-style-textfill-fill-color:black;mso-style-textfill-fill-alpha:100.0%\">%&gt; &nbsp;</span></p>"
+            },
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Expression = ",
+          "id": 10
+        },
+        "3": {
+          "title": "Declarative !",
+          "id": 11
+        }
+      }
+    }
+  }
+}
